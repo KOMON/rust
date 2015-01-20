@@ -68,8 +68,8 @@
     ;; open bracket ends the line
     (when (not (looking-at "[[:blank:]]*\\(?://.*\\)?$"))
       (when (looking-at "[[:space:]]")
-	(forward-word 1)
-	(backward-word 1))
+    (forward-word 1)
+    (backward-word 1))
       (current-column))))
 
 (defun rust-rewind-to-beginning-of-current-level-expr ()
